@@ -12,6 +12,7 @@ djangorestframework-simplejwt = "*"
 requests = "*"
 ipython = "*"
 factory-boy = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8"
