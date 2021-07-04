@@ -1,7 +1,21 @@
 # E-commerce API
 
+## Development
+After cloning the project, create a new environment by running
+
+`pipenv shell`
+
+and install dependencies with
+
+`pipenv install`
+
+For running tests, run
+
+`python manage.py test`
+
 ## Endpoints
 
+For every operation, authentication using JWT is required.
 ### Products
 - List all products `GET /api/products`
 - Get specific product `GET /api/products/{id}`

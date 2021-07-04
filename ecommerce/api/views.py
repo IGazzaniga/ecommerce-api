@@ -17,7 +17,8 @@ class ProductViewSet(ModelViewSet):
     def update_stock(self, request, pk):
         product = self.get_object()
         stock = request.data.get("stock")
-        if stock >= 0:
+
+        if int(stock) >= 0:
             product.stock = stock
             product.save()
             return Response(status=status.HTTP_200_OK)
